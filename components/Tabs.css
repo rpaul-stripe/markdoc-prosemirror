@@ -1,0 +1,34 @@
+.Tag--Tabs__switcher {
+  display: flex;
+  border-bottom: 1px solid #dedede;
+}
+
+.Tag--Tabs__switcher .Tag--Tabs__tab {
+  padding: 15px;
+}
+
+.Tag--Tabs__buttons {
+  display: flex;
+  margin-left: auto;
+}
+
+.Tag--Tabs__buttons div {
+  padding: 15px;
+}
+
+.Tag--Tabs__tab--active {
+  border-bottom: 2px solid #6C8EEF;
+}
+
+.Tag--Tabs__tab--active {
+  color: #6C8EEF;
+  font-weight: 500;
+}
+
+.Tag--Tabs .node-markdocTag {
+  display: none;
+}
+
+.Tag--Tab__editor {
+  display: none;
+}

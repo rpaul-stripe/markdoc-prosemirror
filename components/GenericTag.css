@@ -1,0 +1,47 @@
+
+
+
+.Tag--Generic {
+  --border-color: rgb(97, 70, 155);
+  --background-color: rgb(230, 230, 252);
+  border: 2px solid var(--border-color);
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+}
+
+.Tag--Generic__name {
+  background-color: var(--border-color);
+  color: white;
+  padding: 8px;
+}
+
+.Tag--Generic__attributes {
+  background-color: var(--background-color);
+}
+
+.Tag--Generic__attributes ul {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.Tag--Generic__attributes li {
+  margin-bottom: 5px;
+}
+
+.Tag--Generic__attributes__key {
+  font-weight: 500;
+}
+
+.Tag--Generic__attributes__value {
+  color: #3C4257;
+  margin-left: 5px;
+  font-family: 'Menlo', monospace;
+  font-size: 13px;
+}
+
+.Tag--Generic__content {
+  padding: 15px;
+  margin: 0;
+}

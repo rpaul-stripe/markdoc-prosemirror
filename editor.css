@@ -1,0 +1,176 @@
+body {
+  font-family: 'Camphor Pro', sans-serif;
+  margin: 0;
+}
+
+.App__titlebar {
+  display: flex;
+  background: white;
+  border-bottom: 1px solid #dedede;
+  z-index: 99999;
+  position: sticky;
+  top: 0;
+}
+
+.App__tabs {
+  display: flex;
+  align-items: flex-end;
+  margin-left: auto;
+}
+
+.App__tab {
+  margin-right: 15px;
+  padding-bottom: 10px;
+}
+
+.App__tab--active {
+  color: #6C8EEF;
+  border-bottom: 1px solid #6C8EEF;
+  padding-bottom: 9px;
+}
+
+.App__titlebar h1 {
+  font-weight: 300;
+  margin: 0;
+  padding: 10px;
+  padding-top: 15px;
+  text-transform: uppercase;
+}
+
+.PlainEditor pre {
+  white-space: pre-wrap; 
+  max-width: 800px;
+  margin: auto;
+  line-height: 20px;
+  margin-top: 25px;
+}
+
+.Editor__content {
+  padding-top: 25px;
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-grow: 1;
+}
+
+
+.Editor__content > .ProseMirror {
+  outline: none;
+  width: 100%;
+}
+
+.Editor__content a {
+  text-decoration: none;
+  color: #556cd6;
+}
+
+.Editor__content p {
+  line-height: 26px;
+}
+
+.Editor__content h1 {
+  font-weight: 400;
+}
+
+.Editor__content li > p  {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+/* Give a remote user a caret */
+.collaboration-cursor__caret {
+  border-left: 1px solid #0d0d0d;
+  border-right: 1px solid #0d0d0d;
+  margin-left: -1px;
+  margin-right: -1px;
+  pointer-events: none;
+  position: relative;
+  word-break: normal;
+}
+
+/* Render the username above the caret */
+.collaboration-cursor__label {
+  border-radius: 3px 3px 3px 0;
+  color: white;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  left: -1px;
+  line-height: normal;
+  padding: 0.1rem 0.3rem;
+  position: absolute;
+  top: -1.4em;
+  user-select: none;
+  white-space: nowrap;
+}
+
+mark {
+  background-color: rgb(251, 249, 235);
+  border-bottom: 2px solid rgb(245, 230, 190);
+}
+
+.App__titlebar button {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 25px;
+}
+
+.Editor {
+  display: flex;
+}
+
+.Editor__comments {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding-right: 50px;
+}
+
+.Comment {
+  border: 1px solid #dedede;
+  border-radius: 3px;
+  padding: 15px;
+  background-color: rgb(251, 249, 235);
+  border-color: rgb(245, 230, 190);
+  padding: 0;
+  position: relative;
+}
+
+.Comment h3 {
+  margin: 0;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: rgb(245, 230, 190);
+}
+
+.Comment p {
+  margin: 0;
+  padding: 10px;
+}
+
+.CommentButton {
+  position: relative;
+}
+
+.CommentButton i {
+  font-size: 32px;
+  color: #b8b8b8;
+}
+
+.CommentButton i:hover {
+  font-size: 32px;
+  color: #929292;
+}
+
+.Comment__editing textarea {
+  border: none;
+  background: none;
+  width: 100%;
+  outline: none;
+  resize: none;
+  height: 100px;
+  box-sizing: border-box;
+  padding: 15px;
+  font-family: 'Camphor Pro', sans-serif;
+}

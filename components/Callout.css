@@ -1,0 +1,23 @@
+
+.Tag--Callout {
+  border: 1px solid rgb(227, 232, 238);
+  background: rgb(247, 250, 252);
+  border-radius: 3px;
+  display: flex;
+  padding-right: 15px;
+}
+
+.Tag--Callout__icon {
+  color: rgb(164, 205, 254);
+  font-size: 24px;
+  margin: 15px;
+}
+
+.Tag--Callout__warning {
+  background-color: rgb(252, 249, 233);
+  border-color: rgb(249, 229, 185);
+}
+
+.Tag--Callout__warning .Tag--Callout__icon {
+  color: rgb(229, 153, 62);
+}
